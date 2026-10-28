@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101413">
+  <meta name="description" content="A little corner of the universe for Project Hail Mary fans. A classroom landing-page and analytics demo.">
+  <title>The Hail Mary Club · Find your people</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='16' fill='%23efb75d'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <header><a class="wordmark" href="./" aria-label="The Hail Mary Club home"><span class="mark" aria-hidden="true">✳</span> THE HAIL MARY CLUB</a><span class="header-note">A FAN-MADE TRANSMISSION</span></header>
+  <main>
+    <section class="hero" aria-labelledby="headline">
+      <div class="copy">
+        <p class="eyebrow"><span class="signal" aria-hidden="true"></span> CALLING ALL PROJECT HAIL MARY FANS</p>
+        <h1 id="headline">Space is big.<br>Find your <em>people.</em></h1>
+        <p class="intro">For the ones still thinking about Rocky. A place to trade theories, talk science, and find someone who gets “amaze, amaze, amaze.”</p>
+        <form id="signup-form">
+          <label for="email">Your email, fellow space traveler</label>
+          <div class="form-row"><input id="email" name="email" type="email" autocomplete="off" placeholder="you@earth.com" required maxlength="254" aria-describedby="demo-note"><button type="submit">Join the crew <span aria-hidden="true">↗</span></button></div>
+          <p class="fine-print" id="demo-note">Classroom demo. Use a test email. No emails are stored or sent.</p>
+        </form>
+        <div id="success" class="success" role="status" tabindex="-1" hidden><span class="eyebrow">TRANSMISSION RECEIVED</span><h2>Amaze, amaze, amaze.</h2><p>Your demo sign-up is complete. Rocky approves.</p><button id="reset" type="button">Try another transmission ↗</button></div>
+      </div>
+      <div class="mission-art" role="img" aria-label="An illustrated amber planet with an orbital path and a tiny spacecraft">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="planet"></div>
+        <svg class="ship" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 8 62 37 60 73 50 86 40 73 38 37Z" fill="#eee7d5"/><path d="M39 50 23 74 40 69M61 50 77 74 60 69" fill="#aaa99c"/><circle cx="50" cy="42" r="7" fill="#1d3536"/><path d="m45 82 5 15 5-15" fill="#efb75d"/></svg>
+        <div class="art-label"><span>DESTINATION</span><strong>Good company.</strong><span>NO SPACESUIT REQUIRED</span></div>
+        <span class="coordinate top">τ CETI / IN GOOD COMPANY</span><span class="coordinate bottom">40° OF CURIOSITY. INFINITE POSSIBILITIES.</span>
+      </div>
+    </section>
+    <section class="crew-notes" aria-label="What brings us together"><div><span class="note-number">01 / THE CONVERSATION</span><h2>Still processing that ending?</h2><p>You have found the right crew. Bring your wildest theories and your favorite moments.</p></div><div><span class="note-number">02 / THE CURIOSITY</span><h2>For the science rabbit holes.</h2><p>Astrophage, alien engineering, and all the questions you kept after the last page.</p></div><div><span class="note-number">03 / THE FRIENDSHIP</span><h2>Fist my bump.</h2><p>A shared love of a very unusual friendship. That's a pretty good place to start.</p></div></section>
+  </main>
+  <footer><span>Made on Earth. Inspired by a friendship far beyond it.</span><span>Unofficial fan project · Classroom demo</span><button id="privacy" type="button">Analytics preferences</button></footer>
+  <aside class="consent" id="consent" aria-label="Analytics choice" hidden><p>This class demo uses Google Analytics to count visits and demo sign-ups if you allow it. Your email is never sent to Analytics.</p><div><button id="decline" class="secondary" type="button">No thanks</button><button id="accept" type="button">Allow analytics</button></div></aside>
+</body>
+</html>
